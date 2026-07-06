@@ -3,8 +3,12 @@ body {
   height: 100%;
   width: 100%;
 }
+
+zing-chart{
+  width: 75%;
+}
  
-#myChart {
+/* #myChart {
   height: 100%;
   width: 100%;
   min-height: 150px;
@@ -12,4 +16,4 @@ body {
  
 .zc-ref {
   display: none;
-}
+} */
