@@ -1,0 +1,92 @@
+{
+    "people": [ 
+        { 
+            "id": "taylor_swift",
+            "name": "Taylor Swift",
+            "relationships": [
+                {
+                    "person": "selena_gomez",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 0.8
+                },
+        
+                {
+                    "person": "travis_kelce",
+                    "type": "partner",
+                    "status": "current",
+                    "strength": 1
+                },
+        
+                {
+                    "person": "blake_lively",
+                    "type": "friend",
+                    "status": "strained",
+                    "strength": 0.8
+                },
+        
+                {
+                    "person": "joe_alwyn",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.2
+                },
+        
+                {
+                    "person": "ed_sheeran",
+                    "type": "industry",
+                    "status": "current",
+                    "strength": 1
+                },
+
+                {
+                    "person": "benny_blanco",
+                    "type": "industry",
+                    "status": "current",
+                    "strength": 0.4
+                }
+            ]
+        },
+
+        { 
+            "id": "travis_kelce",
+            "name": "Travis Kelce",
+            "relationships": [
+                {
+                    "person": "patrick_mahomes",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 1
+                },
+        
+                {
+                    "person": "taylor_swift",
+                    "type": "partner",
+                    "status": "current",
+                    "strength": 1
+                }
+            ]
+        },
+
+        { 
+            "id": "selena_gomez",
+            "name": "Selena Gomez",
+            "relationships": [
+                {
+                    "person": "taylor_swift",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 0.8
+                },
+        
+                {
+                    "person": "benny_blanco",
+                    "type": "partner",
+                    "status": "current",
+                    "strength": 1
+                }
+            ]
+        }
+    ]
+}
+

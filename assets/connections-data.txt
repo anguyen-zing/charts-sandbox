@@ -1,0 +1,68 @@
+================================
+====== Defining "Person"  ======
+================================
+
+Person 
+|--  id 
+|-- name 
+|-- categories (if any)
+|-- relationships/connections []  
+  | -- ** List Item ** -- 
+  |-- person 
+  |-- type 
+  |-- status 
+  |-- strength level of connection
+
+================================
+======= Defining "Type"  =======
+================================
+
+- Type will refer to what type of connection 
+  between Person A and B 
+- For simplicity, type of connection will be limited to one type  
+
+- List of 'Types of Connection' to be used:
+  * "friend" - personal friendship or social connection
+  * "family" - family or relative connection 
+  * "partner" - referring to a romantic relationship 
+              such as spouses or girlfriend/boyfriend
+  * "industry" - same professional field like industry peers, 
+               collaborators or coworkers
+  * "conflict" - publicly known tension, feud, or disagreement 
+  * "unknown" - not publicly definite or clarified 
+  
+================================
+====== Defining "Status" =======
+================================
+
+- Status will refer to the current status of the 
+  type of connection between Person A and B 
+- For example, Person A and B's connection is 
+  defined as partner. However, Person A and B are no
+  longer together. Their status is known as former. 
+
+- List of 'Statuses' to be used (more than one can apply): 
+    * "current" - connection is active and ongoing 
+    * "former" - existed in the past but is not active or ongoing
+    * "complicated" - connection has mixed and uncertain dynamics 
+                      that can't really be scoped to "current" or "former"
+    * "rumored" - publicly speculated/alleged and assumed 
+                  but not confirmed
+    * "strained" - connection exists and is known to be marked 
+                   by tension, conflict
+    * "unknown" - not publicly definite or clarified 
+
+=================================================
+=== Defining the Strength Level of Connection ===
+=================================================
+
+- The "Strength Level of Connection" is measured on a numeric scale.
+- Higher number means stronger connection
+- Lower number means weaker connection 
+
+- Strength Level Values : 
+    * 1.00 - very strong, close and there are frequent interactions
+    * 0.8  - close and well established with regular interaction 
+    * 0.6  - meaningful with occasional/notable interaction 
+    * 0.4  - limited, acquaintence-like 
+    * 0.2  - minimal or distant connection 
