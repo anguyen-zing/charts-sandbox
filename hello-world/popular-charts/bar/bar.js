@@ -1,7 +1,9 @@
 ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+
+
 var myConfig = {
   "graphset": [{
-    "type": "pie",
+    "type": "bar",
     "background-color": "white",
     "title": {
       "text": "Tech Giant Quarterly Revenue",
@@ -108,77 +110,77 @@ var myConfig = {
       }
     },
     "series": [{
-        "values": [
-          37.47,
-          57.59,
-          45.65,
-          37.43
-        ],
-        "alpha": 0.95,
-        "borderRadiusTopLeft": 7,
-        "background-color": "purple",
-        "text": "Apple",
-      },
-      {
-        "values": [
-          2.02,
-          2.59,
-          2.5,
-          2.91
-        ],
-        "borderRadiusTopLeft": 7,
-        "alpha": 0.95,
-        "background-color": "orange",
-        "text": "Facebook"
-      },
-      {
-        "values": [
-          13.4,
-          14.11,
-          14.89,
-          16.86
-        ],
-        "alpha": 0.95,
-        "borderRadiusTopLeft": 7,
-        "background-color": "teal",
-        "text": "Google"
-      },
-      {
-        "values": [
-          18.53,
-          24.52,
-          20.4,
-          23.38
-        ],
-        "borderRadiusTopLeft": 7,
-        "alpha": 0.95,
-        "background-color": "red",
-        "text": "Microsoft"
-      },
-      {
-        "values": [
-          17.09,
-          25.59,
-          19.74,
-          19.34
-        ],
-        "borderRadiusTopLeft": 7,
-        "alpha": 0.95,
-        "background-color": "blue",
-        "text": "Amazon"
-      },
-      {
-        "values": [
-          2.31,
-          2.36,
-          2.42,
-          2.52
-        ],
-        "borderRadiusTopLeft": 7,
-        "alpha": 0.95,
-        "background-color": "green",
-        "text": "Cognizant"
-      }
+      "values": [
+        37.47,
+        57.59,
+        45.65,
+        37.43
+      ],
+      "alpha": 0.95,
+      "borderRadiusTopLeft": 7,
+      "background-color": "purple",
+      "text": "Apple",
+    },
+    {
+      "values": [
+        2.02,
+        2.59,
+        2.5,
+        2.91
+      ],
+      "borderRadiusTopLeft": 7,
+      "alpha": 0.95,
+      "background-color": "orange",
+      "text": "Facebook"
+    },
+    {
+      "values": [
+        13.4,
+        14.11,
+        14.89,
+        16.86
+      ],
+      "alpha": 0.95,
+      "borderRadiusTopLeft": 7,
+      "background-color": "teal",
+      "text": "Google"
+    },
+    {
+      "values": [
+        18.53,
+        24.52,
+        20.4,
+        23.38
+      ],
+      "borderRadiusTopLeft": 7,
+      "alpha": 0.95,
+      "background-color": "red",
+      "text": "Microsoft"
+    },
+    {
+      "values": [
+        17.09,
+        25.59,
+        19.74,
+        19.34
+      ],
+      "borderRadiusTopLeft": 7,
+      "alpha": 0.95,
+      "background-color": "blue",
+      "text": "Amazon"
+    },
+    {
+      "values": [
+        2.31,
+        2.36,
+        2.42,
+        2.52
+      ],
+      "borderRadiusTopLeft": 7,
+      "alpha": 0.95,
+      "background-color": "green",
+      "text": "Cognizant"
+    }
     ]
   }]
 };
