@@ -28,31 +28,31 @@ window.addEventListener('load', async() => {
     }
 
     function build_tree(central_id){
-        const central_node = get_person(central_id);
+        const central_person = get_person(central_id);
 
-        if(!central_node) return [];
+        if(!central_person) return [];
 
         const tree_data = [
             {
-                id: central_node.id,
+                id: central_person.id,
                 parent: "",
-                name: central_node.name,
+                name: central_person.name,
                 value: 1
             }
         ];
 
-        (central_node.relationships || []).forEach(connect => {
-            const connected_person = get_person(connect.person);
+        (central_person.relationships || []).forEach(relation => {
+            const connected_person = get_person(relation.person);
             if(!connected_person) return;
 
             tree_data.push({
                 id: connected_person.id,
-                parent: central_node.id,
+                parent: central_person.id,
                 name: connected_person.name,
-                value: connect.strength * 1,
-                type: connect.type,
-                status: connect.status,
-                strength: connect.strength,
+                value: relation.strength * 1,
+                type: relation.type,
+                status: relation.status,
+                strength: relation.strength,
             });
         });
 
