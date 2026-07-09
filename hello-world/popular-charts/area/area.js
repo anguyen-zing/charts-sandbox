@@ -47,7 +47,7 @@ window.addEventListener('load', async () => {
                 "default-value": "",
                 "color": "#19c24c",
                 "x": "20%",
-                "y": 50,
+                "y": 50.,
                 "width": 120,
                 "text-align": "left",
                 "bold": 0,

@@ -1,0 +1,145 @@
+{
+    "matches": [
+        "Start",
+        "Match 1",
+        "Match 2",
+        "Match 3"
+    ],
+    "teams": [
+        {
+            "name": "Cape Verde",
+            "series": [
+                {
+                    "match": "Start",
+                    "rank": 1
+                },
+                {
+                    "match": "Match 1",
+                    "goals": 0,
+                    "outcome": "tie",
+                    "rank": 4
+                },
+                {
+                    "match": "Match 2",
+                    "goals": 2,
+                    "outcome": "tie",
+                    "rank": 3
+                },
+                {
+                    "match": "Match 3",
+                    "goals": 0,
+                    "outcome": "tie",
+                    "rank": 2
+                }
+            ],
+            "ranklist": [
+                1,
+                4,
+                3,
+                2
+            ]
+        },
+        
+        {
+            "name": "Spain",
+            "series": [
+                {
+                    "match": "Start",
+                    "rank": 1
+                },
+                {
+                    "match": "Match 1",
+                    "goals": 0,
+                    "outcome": "tie",
+                    "rank": 3
+                },
+                {
+                    "match": "Match 2",
+                    "goals": 4,
+                    "outcome": "win",
+                    "rank": 1
+                },
+                {
+                    "match": "Match 3",
+                    "goals": 1,
+                    "outcome": "win",
+                    "rank": 1
+                }
+            ],
+            "ranklist": [
+                1,
+                3,
+                1,
+                1
+            ]
+        },
+
+        {
+            "name": "Uruguay",
+            "series": [
+                {
+                    "match": "Start",
+                    "rank": 1
+                },
+                {
+                    "match": "Match 1",
+                    "goals": 1,
+                    "outcome": "tie",
+                    "rank": 1
+                },
+                {
+                    "match": "Match 2",
+                    "goals": 2,
+                    "outcome": "tie",
+                    "rank": 2
+                },
+                {
+                    "match": "Match 3",
+                    "goals": 0,
+                    "outcome": "lose",
+                    "rank": 4
+                }
+            ],
+            "ranklist": [
+                1,
+                1,
+                2,
+                4
+            ]
+        },
+
+        {
+                "name": "Saudi Arabia",
+                "series": [
+                    {
+                        "match": "Start",
+                        "rank": 1
+                    },
+                    {
+                        "match": "Match 1",
+                        "goals": 1,
+                        "outcome": "tie",
+                        "rank": 2
+                    },
+                    {
+                        "match": "Match 2",
+                        "goals": 0,
+                        "outcome": "lose",
+                        "rank": 4
+                    },
+                    {
+                        "match": "Match 3",
+                        "goals": 0,
+                        "outcome": "tie",
+                        "rank": 3
+                    }
+                ],
+                "ranklist": [
+                    1,
+                    2,
+                    4,
+                    3
+                ]
+            }
+        ]
+    }
