@@ -1,0 +1,284 @@
+{
+    "people": [
+        {
+            "id": "taylor_swift",
+            "name": "Taylor Swift",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "travis_kelce",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                },
+                {
+                    "person": "selena_gomez",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 0.8
+                },
+                {
+                    "person": "blake_lively",
+                    "type": "friend",
+                    "status": "strained",
+                    "strength": 0.5
+                },
+                {
+                    "person": "joe_alwyn",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.2
+                },
+                {
+                    "person": "ed_sheeran",
+                    "type": "industry",
+                    "status": "current",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "travis_kelce",
+            "name": "Travis Kelce",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "taylor_swift",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                },
+                {
+                    "person": "jason_kelce",
+                    "type": "sibling",
+                    "status": "current",
+                    "strength": 1
+                },
+                {
+                    "person": "patrick_mahomes",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 0.9
+                }
+            ]
+        },
+        {
+            "id": "jason_kelce",
+            "name": "Jason Kelce",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "travis_kelce",
+                    "type": "sibling",
+                    "status": "current",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "patrick_mahomes",
+            "name": "Patrick Mahomes",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "travis_kelce",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 0.9
+                }
+            ]
+        },
+        {
+            "id": "selena_gomez",
+            "name": "Selena Gomez",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "taylor_swift",
+                    "type": "friend",
+                    "status": "current",
+                    "strength": 0.8
+                },
+                {
+                    "person": "benny_blanco",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                },
+                {
+                    "person": "justin_bieber",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.15
+                }
+            ]
+        },
+        {
+            "id": "benny_blanco",
+            "name": "Benny Blanco",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "selena_gomez",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                },
+                {
+                    "person": "ed_sheeran",
+                    "type": "industry",
+                    "status": "current",
+                    "strength": 0.6
+                }
+            ]
+        },
+        {
+            "id": "joe_alwyn",
+            "name": "Joe Alwyn",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "taylor_swift",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.2
+                }
+            ]
+        },
+        {
+            "id": "ed_sheeran",
+            "name": "Ed Sheeran",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "taylor_swift",
+                    "type": "industry",
+                    "status": "current",
+                    "strength": 1
+                },
+                {
+                    "person": "benny_blanco",
+                    "type": "industry",
+                    "status": "current",
+                    "strength": 0.6
+                }
+            ]
+        },
+        {
+            "id": "blake_lively",
+            "name": "Blake Lively",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "taylor_swift",
+                    "type": "friend",
+                    "status": "strained",
+                    "strength": 0.5
+                },
+                {
+                    "person": "ryan_reynolds",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "ryan_reynolds",
+            "name": "Ryan Reynolds",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "blake_lively",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "zendaya",
+            "name": "Zendaya",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "tom_holland",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "tom_holland",
+            "name": "Tom Holland",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "zendaya",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "justin_bieber",
+            "name": "Justin Bieber",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "hailey_bieber",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                },
+                {
+                    "person": "selena_gomez",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.15
+                }
+            ]
+        },
+        {
+            "id": "hailey_bieber",
+            "name": "Hailey Bieber",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "justin_bieber",
+                    "type": "partner",
+                    "status": "married",
+                    "strength": 1
+                }
+            ]
+        },
+        {
+            "id": "kim_kardashian",
+            "name": "Kim Kardashian",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "kanye_west",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.3
+                }
+            ]
+        },
+        {
+            "id": "kanye_west",
+            "name": "Kanye West",
+            "image": "/assets/social_connections/pictures/placeholder.png",
+            "relationships": [
+                {
+                    "person": "kim_kardashian",
+                    "type": "partner",
+                    "status": "former",
+                    "strength": 0.3
+                }
+            ]
+        }
+    ]
+}

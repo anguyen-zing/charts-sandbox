@@ -14,9 +14,9 @@ window.addEventListener('load', async () => {
             "font-family": "Arial",
         },
         "options": {
-            "global-ranking": false, 
+            "global-ranking": false,
             "color-type": "palette",
-            "palette": ['#b70606', '#018ab8',  '#1e6b38', '#93cdd8'],
+            "palette": ['#b70606', '#018ab8', '#1e6b38', '#93cdd8'],
             "style": {
                 "label-overall": {
                     "text": "Group Standings Over Time",
@@ -76,8 +76,16 @@ window.addEventListener('load', async () => {
         id: 'myChart',
         data: myConfig,
         height: "100%",
-        width: "100%"
+        width: "100%",
+        output: "svg",
+        
     });
+    console.log(document.getElementById("myChart").innerHTML);
+
+    // zingchart.bind('myChart', 'rendercomplete', function () {
+
+
+    // });
 });
 
 
