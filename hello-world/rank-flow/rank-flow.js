@@ -77,15 +77,9 @@ window.addEventListener('load', async () => {
         data: myConfig,
         height: "100%",
         width: "100%",
-        output: "svg",
-        
+        output: "svg"
     });
     console.log(document.getElementById("myChart").innerHTML);
-
-    // zingchart.bind('myChart', 'rendercomplete', function () {
-
-
-    // });
 });
 
 
