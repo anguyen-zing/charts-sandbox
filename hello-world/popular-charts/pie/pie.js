@@ -1,87 +1,81 @@
 ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
-var myConfig = {
-  type: "pie",
-  plot: {
-    borderColor: "#2B313B",
-    borderWidth: 5,
-    // slice: 90,
-    valueBox: {
-      placement: 'out',
-      text: '%t\n%npv%',
+
+window.addEventListener('load', async () => {
+  const response = await fetch('/assets/data_samples/moods.json');
+  const data = await response.json();
+  const moods = data.moods;
+
+  let palette = [ '#FFD872', '#00B0BA', '#4DD091', '#6C88C4',
+                  '#FF5768', '#C05780', '#b8e4d6', '#CFF800',
+                  '#00CDAC', '#FFA23A'];
+
+  const moodSeries = moods.map((m, i) => ({
+    text: m.label,
+    values: [m.value],
+    backgroundColor: palette[i % palette.length]
+  }));
+
+  var myConfig = {
+    type: "pie",
+    plot: {
+      borderColor: "#2B313B",
+      borderWidth: 3,
+      valueBox: {
+        placement: 'fixed=70%;50%',
+        text: '%t\n%npv%',
+        fontFamily: "Open Sans"
+      },
+      tooltip: {
+        fontSize: '18',
+        fontFamily: "Open Sans",
+        padding: "5 10",
+        text: "%npv%"
+      },
+      animation: {
+        effect: 2,
+        method: 5,
+        speed: 900,
+        sequence: 1,
+        delay: 3000
+      },
+      pieTransform: 'droplet',
+      slice: 0
+    },
+    source: {
+      text: 'gs.statcounter.com',
+      fontColor: "#8e99a9",
       fontFamily: "Open Sans"
     },
-    tooltip: {
-      fontSize: '18',
-      fontFamily: "Open Sans",
-      padding: "5 10",
-      text: "%npv%"
+    title: {
+      "fontColor": "#8e99a9",
+      "text": 'Mood Flower Pie Chart',
+      "align": "left",
+      "offsetX": 10,
+      "fontFamily": "Open Sans",
+      "fontSize": 25,
+      "visible": false
     },
-    animation: {
-      effect: 2,
-      method: 5,
-      speed: 900,
-      sequence: 1,
-      delay: 3000
-    }
-  },
-  source: {
-    text: 'gs.statcounter.com',
-    fontColor: "#8e99a9",
-    fontFamily: "Open Sans"
-  },
-  title: {
-    fontColor: "#8e99a9",
-    text: 'Global Browser Usage',
-    align: "left",
-    offsetX: 10,
-    fontFamily: "Open Sans",
-    fontSize: 25
-  },
-  subtitle: {
-    offsetX: 10,
-    offsetY: 10,
-    fontColor: "#8e99a9",
-    fontFamily: "Open Sans",
-    fontSize: "16",
-    text: 'May 2016',
-    align: "left"
-  },
-  plotarea: {
-    margin: "20 0 0 0"
-  },
-  series: [{
-      values: [11.38],
-      text: "Internet Explorer",
-      backgroundColor: '#50ADF5',
+    "subtitle": {
+      "offsetX": 10,
+      "offsetY": 10,
+      "fontColor": "#8e99a9",
+      "fontFamily": "Open Sans",
+      "fontSize": "16",
+      "text": 'Forget-Mood-Nots',
+      "align": "left",
+      "visible": false
     },
-    {
-      values: [56.94],
-      text: "Chrome",
-      backgroundColor: '#FF7965',
-      detached: true
+    "plotarea": {
+      margin: "20 0 0 0"
     },
-    {
-      values: [14.52],
-      text: 'Firefox',
-      backgroundColor: '#FFCB45',
-      detached: true
-    },
-    {
-      text: 'Safari',
-      values: [9.69],
-      backgroundColor: '#6877e5'
-    },
-    {
-      text: 'Other',
-      values: [7.48],
-      backgroundColor: '#6FB07F'
-    }
-  ]
-};
+    "series": moodSeries
+  };
 
-zingchart.render({
-  id: 'myChart',
-  data: myConfig,
-  height: '100%',
-  width: '100%'
+  zingchart.render({
+    id: 'flowerChart',
+    data: myConfig,
+    height: '300px',
+    width: '300px'
+  });
 });
+

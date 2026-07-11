@@ -1,36 +1,39 @@
 window.addEventListener('load', async () => {
 
-    const response = await fetch('/assets/data_samples/racing_times.json');
+    const response = await fetch('/assets/data_samples/moods.json');
     const data = await response.json();
+    const stem = data.verticalMoods;
 
     const colors = [
-        { line: '#82bdd4', border: '#82bdd4' },
-        { line: '#dea0c8', border: '#dea0c8' },
-        { line: '#83e298', border: '#83e298' }
+        { line: '#FFD872', border: '#FFD872' },
+        { line: '#00B0BA', border: '#00B0BA' },
+        { line: '#4DD091', border: '#4DD091' },
+        { line: '#6C88C4', border: '#6C88C4' },
+        { line: '#FF5768', border: '#FF5768' },
+        { line: '#C05780', border: '#C05780' },
+        { line: '#b8e4d6', border: '#b8e4d6' },
+        { line: '#CFF800', border: '#CFF800' },
+        { line: '#00CDAC', border: '#00CDAC' },
+        { line: '#FFA23A', border: '#FFA23A' }
     ];
 
-    const numberWords = ['one', 'two', 'three'];
-
-    const raceSeries = data.runners.map((runner, i) => {
-        const imagePath = `/assets/pictures/runner-${numberWords[i]}.png`;
+    const stemMoodSeries = stem.map((mood, i) => {
+        const imagePath = `/assets/pictures/leaf.png`;
         const markerImg = `${imagePath}`;
 
+        const values = mood.path.x.map((x, index) => [ x, mood.path.y[index]]);
+
         return {
-            "values": runner.elapsedSeconds,
-            "text": runner.name,
+            "text": stem[i].label,
+            "values": values,
             "line-color": colors[i].line,
-            "legend-item": {
-                "background-color": colors[i].line,
-                "borderRadius": 5,
-                "font-color": "white"
-            },
-            "legend-marker": { "visible": true },
+            "legend-marker": { "visible": false},
             "marker": {
                 "background-color": 'none',
                 "background-image": markerImg,
                 "background-repeat": 'no-repeat',
                 "background-scale": 0.1,
-                "size": '75px'
+                "size": '30px'
             },
             "highlight-marker": {
                 "size": 1,
@@ -43,7 +46,7 @@ window.addEventListener('load', async () => {
         "type": "line",
         "utc": true,
         "title": {
-            "text": "A Marathon Championship Race",
+            "text": "Mood Stem",
             "font-size": "24px",
             "adjust-layout": true
         },
@@ -65,27 +68,23 @@ window.addEventListener('load', async () => {
             }
         },
         "scale-x": {
-            "values": data.distanceKm,
             "shadow": 0,
-            "step": 5,
-            "max-value": 45,
-            "label": {
-                "text": "Checkpoints with Distance in KM"
-            },
+            "step": 1,
+            "min-value": -10,
+            "max-value": 10,
+          
             "minor-ticks": 0
         },
         "scale-y": {
             "line-color": "#f6f7f8",
-            "min-value": 800,
-            "max-value": 8000,
+            "min-value": 0,
+            "max-value": 75,
             "shadow": 0,
-            "step": 800,
+            "step": 5,
             "guide": {
                 "line-style": "dashed"
             },
-            "label": {
-                "text": "Time Elapsed in Seconds"
-            },
+          
             "minor-ticks": 0,
             "thousands-separator": ","
         },
@@ -123,14 +122,14 @@ window.addEventListener('load', async () => {
                 "method": 0
             }
         },
-        "series": raceSeries
+        "series": stemMoodSeries
     };
 
     zingchart.render({
         id: 'myChart',
         data: myConfig,
-        height: '100%',
-        width: '100%',
+        height: '1000px',
+        width: '1000px',
         output: 'svg'
     });
 

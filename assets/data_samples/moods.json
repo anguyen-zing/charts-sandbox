@@ -1,0 +1,118 @@
+{
+    "moods": [
+        {
+            "label": "Happy",
+            "value": 22
+        },
+        {
+            "label": "Curious",
+            "value": 16
+        },
+        {
+            "label": "Creative",
+            "value": 18
+        },
+        {
+            "label": "Sleepy ",
+            "value": 12
+        },
+        {
+            "label": "Excited",
+            "value": 14
+        },
+        {
+            "label": "Hungry",
+            "value": 8
+        },
+        {
+            "label": "Relaxed",
+            "value": 15
+        },
+        {
+            "label": "Chaotic",
+            "value": 10
+        },
+        {
+            "label": "Focused",
+            "value": 13
+        },
+        {
+            "label": "Goofy",
+            "value": 17
+        }
+    ],
+
+   "verticalMoods": 
+   [
+        {
+            "label": "Happy",
+            "path": {
+                "x": [0, -1, 0, 1, 0, -1, 0, 1, 0],
+                "y": [0, 5, 10, 15, 20, 25, 30, 35]
+            }
+        },
+        {
+            "label": "Curious",
+            "path": {
+                "x": [0, -2, -2, -2, -3],
+                "y": [0, 10, 15, 12, 36]
+            }
+        },
+        {
+            "label": "Creative",
+             "path": {
+                "x": [0, 2, 2, 2, 2],
+                "y": [0, 10, 15, 12, 40]
+            }
+        },
+        {
+            "label": "Sleepy",
+             "path": {
+                "x": [0, -2, -2, -2, -2.5],
+                "y": [0, 10, 15, 12, 23]
+            }
+        },
+        {
+            "label": "Excited",
+             "path": {
+                "x": [0, 2, 2, 2, 2],
+                "y": [0, 10, 15, 12, 40]
+            }
+        },
+        {
+            "label": "Hungry",
+            "path": {
+                "x": [0, -2, -2, -2, -2],
+                "y": [0, 10, 15, 12, 30]
+            }
+        },
+        {
+            "label": "Relaxed",
+             "path": {
+                "x": [0, 2, 2, 3.5, 4],
+                "y": [0, 10, 17, 22, 35]
+            }
+        },
+        {
+            "label": "Chaotic",
+             "path": {
+                "x": [0, 0.5, 0, -0.5, 0],
+                "y": [0, 10, 20, 30, 40]
+            }
+        },
+        {
+            "label": "Focused",
+             "path": {
+                "x": [0, 0, 0, 0, 0],
+                "y": [0, 5, 10, 20, 46]
+            }
+        },
+        {
+            "label": "Goofy",
+             "path": {
+                "x": [0, -0.5, 0, 0.5, 0],
+                "y": [0, 10, 20, 30, 40]
+            }
+        }
+    ]
+}
