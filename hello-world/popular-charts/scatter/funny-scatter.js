@@ -7,29 +7,20 @@ const chefs = [
     { x: -81, y: -44, name: "College Student with a Hot Plate", marker: "/assets/pictures/chefs/college_cook.png" },
     { x: -74, y: 79, name: "Waffle House Cook at 2 AM", marker: "/assets/pictures/chefs/waffle_house.png" },
     { x: -66, y: -17, name: "Uncle Who Grills Everything Well-Done", marker: "/assets/pictures/chefs/cooking_uncle.png" },
-
     { x: -58, y: 100, name: "Grandma Who Never Uses Recipes", marker: "/assets/pictures/chefs/cooking_grandma.png" },
     { x: -49, y: -71, name: "Microwave Meal Expert", marker: "/assets/pictures/chefs/microwave-expert.png" },
-    { x: -42, y: 15, name: "Dad at the BBQ", marker: "/assets/pictures/chefs/remy.png" },
+    { x: -42, y: 15, name: "Dad at the BBQ", marker: "/assets/pictures/chefs/bbq_dad.png" },
     { x: -25, y: 56, name: "Costco Sample Lady", marker: "/assets/pictures/chefs/costco_sample.png" },
     { x: -17, y: -39, name: "Air Fryer Addict", marker: "/assets/pictures/chefs/airfryer.png" },
-
-    { x: -8, y: 88, name: "Gordon Ramsay", marker: "/assets/pictures/chefs/remy.png" },
-    { x: 0, y: 0, name: "Average Home Cook", marker: "/assets/pictures/chefs/remy.png" },
-    { x: 9, y: -84, name: '"Medium Rare Chicken" Fan', marker: "/assets/pictures/chefs/remy.png" },
-    { x: 27, y: -23, name: "YouTube Shorts Chef", marker: "/assets/pictures/chefs/remy.png" },
+    { x: 8, y: 88, name: "Gordon Ramsay", marker: "/assets/pictures/chefs/gordan_ramsay.png" },
+    { x: 0, y: 0, name: "Average Home Cook", marker: "/assets/pictures/chefs/home_cook.png" },
+    { x: 27, y: -23, name: "YouTube Shorts Chef", marker: "/assets/pictures/chefs/youtube_cook.png" },
     { x: 39, y: 96, name: "Remy (Ratatouille)", marker: "/assets/pictures/chefs/remy.png" },
-    { x: 51, y: -58, name: "Kitchen Fire Starter", marker: "/assets/pictures/chefs/remy.png" },
-
-    { x: 63, y: 33, name: "Instagram Food Influencer", marker: "/assets/pictures/chefs/remy.png" },
-    { x: 74, y: -100, name: "Cafeteria Mystery Meat Chef", marker: "/assets/pictures/chefs/remy.png" },
-    { x: 82, y: 81, name: "Michelin Star Chef", marker: "/assets/pictures/chefs/remy.png" },
-    { x: 90, y: -6, name: '"Trust Me, I Eyeball Everything"', marker: "/assets/pictures/chefs/remy.png" },
-    { x: 100, y: 100, name: "Mom", marker: "/assets/pictures/chefs/remy.png" }
+    { x: 63, y: 33, name: "Instagram Food Influencer", marker: "/assets/pictures/chefs/food_influencer.png" },
+    { x: 74, y: -100, name: "Cafeteria Mystery Meat Chef", marker: "/assets/pictures/chefs/cafeteria.png" },
+    { x: 82, y: 81, name: "Michelin Star Chef", marker: "/assets/pictures/chefs/michelin_chef.png" }
 ];
 
-// const chefMapCoordinates = chefs.map(chef => ( [chef.x, chef.y] ));
-// const chefToolTipLabel = chefs.map(label => { label.name});
 const chefSeries = chefs.map(chef => ({
 
     "values": [[chef.x, chef.y]],
@@ -57,19 +48,86 @@ var myConfig4 = {
         adjustLayout: true
     },
 
+    labels: [{
+        text: "TRUST WITH YOUR STOMACH",
+        x: "43%",
+        y: "5%",
+        fontSize: "22px",
+        color: "blue",
+        borderColor: "blue",
+        borderWidth: "1px",
+        padding: "5px",
+        borderRadius: 10,
+
+        mediaRules: [{
+            maxWidth: 400,
+            backgroundColor: 'red',
+        }]
+    },
+    {
+        text: "JUST ORDER TAKEOUT INSTEAD",
+        x: "43%",
+        y: "93%",
+        fontSize: "22px",
+        color: "blue",
+        borderColor: "blue",
+        borderWidth: "1px",
+        padding: "5px",
+        borderRadius: 10,
+
+        mediaRules: [{
+            maxWidth: 400,
+            backgroundColor: 'red',
+        }]
+    },
+    {
+        text: "NO CULINARY TRAINING",
+        x: "5%",
+        y: "49%",
+        fontSize: "22px",
+        color: "blue",
+        borderColor: "blue",
+        borderWidth: "1px",
+        padding: "5px",
+        borderRadius: 10,
+
+        mediaRules: [{
+            maxWidth: 400,
+            backgroundColor: 'red',
+        }]
+    },
+    {
+        text: "PROFESSIONALLY TRAINED",
+        x: "85%",
+        y: "49%",
+        fontSize: "22px",
+        color: "blue",
+        borderColor: "blue",
+        borderWidth: "1px",
+        padding: "5px",
+        borderRadius: 10,
+
+        mediaRules: [{
+            maxWidth: 400,
+            backgroundColor: 'red',
+        }]
+    }],
+
     "tooltip": {
         "text": "%t: %v",
         "font-color": "black",
+        "font-size": "17px",
         "font-family": "Georgia, serif",
         "background-color": "white",
         "border-color": "black",
-        "border-width": 2
+        "border-width": 1
     },
 
     "scaleX": {
-        "min-value": "-100",
+        "min-value": -100,
         "max-value": 100,
-        "label": "Very Truthworthy",
+        "step": 25,
+
         "refLine": {
             visible: true,
             lineColor: 'gray',
@@ -79,8 +137,10 @@ var myConfig4 = {
     },
 
     "scaleY": {
-        "min-value": -100,
-        "max-value": 100,
+        "min-value": -125,
+        "max-value": 125,
+        "step": 25,
+        visible: true,
 
         "refLine": {
             visible: true,

@@ -35,7 +35,7 @@ window.addEventListener('load', async () => {
         },
         scaleY: {
             guide: {
-                visible: true
+                visible: true,
             },
             label: {
                 text: yAxisLabel
