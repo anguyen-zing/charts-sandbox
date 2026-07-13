@@ -1,0 +1,203 @@
+{
+  "chart": {
+    "title": "Programming Languages: Learning Difficulty vs Job Demand",
+    "subtitle": "Languages farther right have stronger job demand; languages higher up are harder to learn.",
+    "xAxis": {
+      "label": "Job demand score",
+      "min": 0,
+      "max": 100,
+      "leftLabel": "lower demand",
+      "rightLabel": "higher demand",
+      "referenceLine": 50
+    },
+    "yAxis": {
+      "label": "Learning difficulty",
+      "min": 0,
+      "max": 100,
+      "bottomLabel": "easier",
+      "topLabel": "harder"
+    }
+  },
+  "data": [
+    {
+      "id": "python",
+      "label": "Python",
+      "shortLabel": "PY",
+      "x": 92,
+      "y": 28,
+      "category": "general-purpose",
+      "icon": "/icons/python.svg"
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript",
+      "shortLabel": "JS",
+      "x": 95,
+      "y": 42,
+      "category": "web",
+      "icon": "/icons/javascript.svg"
+    },
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "shortLabel": "TS",
+      "x": 88,
+      "y": 50,
+      "category": "web",
+      "icon": "/icons/typescript.svg"
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "shortLabel": "JV",
+      "x": 84,
+      "y": 58,
+      "category": "enterprise",
+      "icon": "/icons/java.svg"
+    },
+    {
+      "id": "csharp",
+      "label": "C#",
+      "shortLabel": "C#",
+      "x": 78,
+      "y": 55,
+      "category": "enterprise",
+      "icon": "/icons/csharp.svg"
+    },
+    {
+      "id": "cpp",
+      "label": "C++",
+      "shortLabel": "C++",
+      "x": 72,
+      "y": 88,
+      "category": "systems",
+      "icon": "/icons/cpp.svg"
+    },
+    {
+      "id": "c",
+      "label": "C",
+      "shortLabel": "C",
+      "x": 65,
+      "y": 82,
+      "category": "systems",
+      "icon": "/icons/c.svg"
+    },
+    {
+      "id": "go",
+      "label": "Go",
+      "shortLabel": "GO",
+      "x": 70,
+      "y": 46,
+      "category": "backend",
+      "icon": "/icons/go.svg"
+    },
+    {
+      "id": "rust",
+      "label": "Rust",
+      "shortLabel": "RS",
+      "x": 62,
+      "y": 94,
+      "category": "systems",
+      "icon": "/icons/rust.svg"
+    },
+    {
+      "id": "swift",
+      "label": "Swift",
+      "shortLabel": "SW",
+      "x": 58,
+      "y": 61,
+      "category": "mobile",
+      "icon": "/icons/swift.svg"
+    },
+    {
+      "id": "kotlin",
+      "label": "Kotlin",
+      "shortLabel": "KT",
+      "x": 61,
+      "y": 57,
+      "category": "mobile",
+      "icon": "/icons/kotlin.svg"
+    },
+    {
+      "id": "php",
+      "label": "PHP",
+      "shortLabel": "PHP",
+      "x": 68,
+      "y": 35,
+      "category": "web",
+      "icon": "/icons/php.svg"
+    },
+    {
+      "id": "ruby",
+      "label": "Ruby",
+      "shortLabel": "RB",
+      "x": 45,
+      "y": 38,
+      "category": "web",
+      "icon": "/icons/ruby.svg"
+    },
+    {
+      "id": "r",
+      "label": "R",
+      "shortLabel": "R",
+      "x": 55,
+      "y": 64,
+      "category": "data",
+      "icon": "/icons/r.svg"
+    },
+    {
+      "id": "scala",
+      "label": "Scala",
+      "shortLabel": "SC",
+      "x": 41,
+      "y": 86,
+      "category": "data",
+      "icon": "/icons/scala.svg"
+    },
+    {
+      "id": "dart",
+      "label": "Dart",
+      "shortLabel": "DT",
+      "x": 49,
+      "y": 44,
+      "category": "mobile",
+      "icon": "/icons/dart.svg"
+    },
+    {
+      "id": "lua",
+      "label": "Lua",
+      "shortLabel": "LU",
+      "x": 30,
+      "y": 24,
+      "category": "scripting",
+      "icon": "/icons/lua.svg"
+    },
+    {
+      "id": "haskell",
+      "label": "Haskell",
+      "shortLabel": "HS",
+      "x": 22,
+      "y": 96,
+      "category": "functional",
+      "icon": "/icons/haskell.svg"
+    },
+    {
+      "id": "elixir",
+      "label": "Elixir",
+      "shortLabel": "EX",
+      "x": 35,
+      "y": 73,
+      "category": "functional",
+      "icon": "/icons/elixir.svg"
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "shortLabel": "SQL",
+      "x": 90,
+      "y": 32,
+      "category": "database",
+      "icon": "/icons/sql.svg"
+    }
+  ]
+}

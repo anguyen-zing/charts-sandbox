@@ -1,0 +1,70 @@
+{
+  "title": "Major Northern Sky Constellations",
+  "subtitle": "Scatter plot of simplified constellation star positions",
+
+  "xAxis": {
+    "label": "Right Ascension (normalized)",
+    "min": 0,
+    "max": 100
+  },
+
+  "yAxis": {
+    "label": "Declination (normalized)",
+    "min": 0,
+    "max": 100
+  },
+
+  "series": [
+    {
+      "name": "Big Dipper",
+      "values": [
+        [12, 68],
+        [16, 58],
+        [27, 56],
+        [30, 65],
+        [39, 69],
+        [48, 73],
+        [57, 80]
+      ]
+    },
+    {
+      "name": "Cassiopeia",
+      "values": [
+        [64, 72],
+        [71, 82],
+        [78, 70],
+        [86, 80],
+        [94, 69]
+      ]
+    },
+    {
+      "name": "Orion",
+      "values": [
+        [17, 42],
+        [32, 44],
+        [22, 31],
+        [27, 29],
+        [32, 27],
+        [19, 13],
+        [36, 11],
+        [27, 24],
+        [27, 20],
+        [28, 16]
+      ]
+    },
+    {
+      "name": "Scorpius",
+      "values": [
+        [63, 47],
+        [68, 43],
+        [72, 49],
+        [76, 39],
+        [79, 33],
+        [82, 27],
+        [85, 21],
+        [90, 16],
+        [94, 20]
+      ]
+    }
+  ]
+}
