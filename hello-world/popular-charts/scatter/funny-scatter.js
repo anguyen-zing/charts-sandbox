@@ -140,7 +140,8 @@ var myConfig4 = {
         "min-value": -125,
         "max-value": 125,
         "step": 25,
-        visible: true,
+        "visible": true,
+        // "lineColor": "white",
 
         "refLine": {
             visible: true,
