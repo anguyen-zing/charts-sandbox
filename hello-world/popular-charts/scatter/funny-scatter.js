@@ -50,7 +50,7 @@ var myConfig4 = {
 
     labels: [{
         text: "TRUST WITH YOUR STOMACH",
-        x: "43%",
+        x: "41%",
         y: "5%",
         fontSize: "22px",
         color: "blue",
@@ -66,8 +66,8 @@ var myConfig4 = {
     },
     {
         text: "JUST ORDER TAKEOUT INSTEAD",
-        x: "43%",
-        y: "93%",
+        x: "40%",
+        y: "90%",
         fontSize: "22px",
         color: "blue",
         borderColor: "blue",
@@ -98,7 +98,7 @@ var myConfig4 = {
     },
     {
         text: "PROFESSIONALLY TRAINED",
-        x: "85%",
+        x: "75%",
         y: "49%",
         fontSize: "22px",
         color: "blue",
