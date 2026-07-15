@@ -16,10 +16,7 @@ window.addEventListener('load', async () => {
                     text: "%data-risk-owner",
                     "font-color": "black",
                     placement: "bottom-in"
-                },
-                "bars-space-left": 0.15,    // group spacing 
-                "bars-space-right": 0.15,
-                barsOverlap: 0
+                }
             },
 
             plotarea: {
@@ -37,7 +34,7 @@ window.addEventListener('load', async () => {
                 maxItems: 15
             },
 
-            "scale-x": {
+            scaleX: {
                 labels: data.labels,
                 autoFit: false,
                 itemsOverlap: false
