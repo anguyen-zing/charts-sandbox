@@ -1,0 +1,89 @@
+{
+  "labels": [
+    "10_9_18_testing",
+    "Acme Corporation",
+    "Acme Teck-CMMC",
+    "CBP",
+    "CBT-Bo-for-Testing-Do-Not-Delete",
+    "Craigs Business objects",
+    "level 1",
+    "level 2",
+    "Northern Montana State Government",
+    "SubSub C3",
+    "Subsystem A",
+    "Subsystem B",
+    "Super System"
+  ],
+  "datasets": [
+    {
+      "name": "Primary",
+      "values": [1, 1, 4, 1, 1, 1, 1, 1, 3, 8, 56, 24, 59],
+      "actualValues": [0, 0, 4, 0, 0, 0, 0, 0, 3, 8, 56, 24, 59],
+      "riskOwners": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "colors": [
+        "#ffff33",
+        "#ffff33",
+        "#f9a825",
+        "#ffff33",
+        "#ffff33",
+        "#ffff33",
+        "#ffff33",
+        "#ffff33",
+        "#f9a825",
+        "#f9a825",
+        "#f9a825",
+        "#f9a825",
+        "#f52216"
+      ]
+    },
+    {
+      "name": "Secondary",
+      "values": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
+      "actualValues": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "riskOwners": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Frank",
+        "",
+        "",
+        "Master of Risk",
+        "",
+        "",
+        ""
+      ],
+      "colors": [
+        "transparent",
+        "transparent",
+        "transparent",
+        "transparent",
+        "transparent",
+        "transparent",
+        "#ffff33",
+        "transparent",
+        "transparent",
+        "#ffff33",
+        "transparent",
+        "transparent",
+        "transparent"
+      ]
+    }
+  ]
+}

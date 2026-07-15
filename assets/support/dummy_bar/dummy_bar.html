@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ZingSoft Demo</title>
+
+    <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <style>
+        html,
+        body,
+        #myChart {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='myChart'></div>
+    <script>
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+
+        valueText = ['None', 'None', 'None', 'None', 'None', 'None',
+            'Frank', 'None', 'None', 'None', 'Master of Risk',
+            'None', 'None', 'None'
+        ];
+
+        var myConfig = {
+            type: "hbar",
+
+            plot: {
+                stacked: false,
+                'bar-width': '17',
+                showZero: false
+                // 'value-box': {
+                //     text: valueText,
+                //     'font-color': 'black',
+                //     placement: 'bottom-in',
+                // },
+            },
+
+
+            plotarea: {
+                adjustLayout: true
+            },
+
+            tooltip: {
+                text: '%data-risk-owner: %v',
+                decimals: 2,
+            },
+
+            scaleX: {
+                labels: ["10_9_18_testing", "Acme Corporation", "Acme Teck-CMMC", "CBP",
+                    "CBT-Bo-for-Testing-Do-Not-Delete", "Craigs Business objects",
+                    "level 1", "level 2", "Northern Montana State Government", "SubSub C3",
+                    "Subsystem A", "Subsystem B", "Super System"],
+
+                autoFit: false,
+                itemsOverlap: false,
+            },
+
+            series: [
+                {
+                    "values": [0, 0, 0, 0,
+                        0, 0, 0, 0,
+                        0, 0, 0, 0,
+                        59
+                    ],
+                    "background-color": "red",
+                    "text": "Cognizant",
+                    'value-box': {
+                        text: ['hi'],
+                        'font-color': 'black',
+                        placement: 'bottom-in',
+                    },
+
+                },
+
+                {
+                    "values": [0, 0, 4, 0,
+                        0, 0, 0, 0,
+                        0, 3, 8, 56,
+                        24,
+                    ],
+                    "background-color": "orange",
+                    "text": "Cognizant",
+
+                },
+
+                {
+                    values:
+                        [
+                            1, 1, 0, 1,
+                            1, 1, 1, 1,
+                            1, 0, 1, 0,
+                            0
+                        ],
+                    "background-color": "yellow",
+                    "text": "Cognizant",
+                },
+
+            ],
+
+            scaleY: {
+                step: 5,
+                itemsOverlap: true,
+                maxItems: 15,
+            }
+        };
+
+        zingchart.render({
+            id: 'myChart',
+            data: myConfig,
+            height: "100%",
+            width: "100%"
+        });
+    </script>
+</body>
+
+</html>
